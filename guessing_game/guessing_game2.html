@@ -1,0 +1,28 @@
+<script>
+var guess, answer, message;
+answer = ('a');
+answer2 = ('c')
+guess = prompt('What is the capital of Vermont? a, Montpelier, b, Atlanta, c Montreal');
+
+if (guess == answer) {
+  message = 'Correct!'
+  alert(message);
+  guess = prompt('What is the capital of Washington? a, Ontario, b, New York, c, Olympia');
+  if (guess == answer) {
+    message = 'Correct!'
+  }
+}
+
+
+else {
+ message = 'Incorrect!'
+}
+
+alert(message);
+
+
+
+
+
+
+</script>
