@@ -1,19 +1,24 @@
 <script>
 var guess, answer, message;
-answer = ("a");
-
-guess = prompt("What is the capital of Vermont? a, Montpelier, b, Atlanta, c Montreal");
+answer = ('a');
+answer2 = ('c')
+guess = prompt('What is the capital of Vermont? a, Montpelier, b, Atlanta, c Montreal');
 
 if (guess == answer) {
-  message = "Correct!"
+  message = 'Correct!'
+  alert(message);
+  guess = prompt('What is the capital of Washington? a, Ontario, b, New York, c, Olympia');
+  if (guess == answer) {
+    message = 'Correct!'
+  }
 }
-else
-{ message = "Incorrect!"
+
+
+else {
+ message = 'Incorrect!'
 }
+
 alert(message);
-
-
-
 
 // HTML additions assignment below
 <!DOCTYPE html>
@@ -60,3 +65,8 @@ alert(message);
 
 <!-- Idea; include multiple game instances so that users can play against friends to see who can get the best score. Highest to lowest score, along with the user's name will be displayed in list form, or in a table.
 Also, change the answer input method from the user to radio buttons instead of alerts for a more appropriate looking multiple choice format. -->
+
+
+
+
+</script>
